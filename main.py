@@ -13,7 +13,7 @@ root = tree.getroot()
 for offer in root.findall('.//offer'):
   offer.set('available', 'true')
 
-tree.write('modified_file.xml')
+tree.write('modified_file.yml')
 os.system('git add modified_file.yml')
 os.system('git commit -m "Оновлено файл"')
 os.system('git push')
