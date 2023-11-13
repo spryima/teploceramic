@@ -14,6 +14,6 @@ for offer in root.findall('.//offer'):
   offer.set('available', 'true')
 
 tree.write('modified_file.xml')
-os.system('git add modified_file.xml')
+os.system('git add modified_file.yml')
 os.system('git commit -m "Оновлено файл"')
 os.system('git push')
